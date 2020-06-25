@@ -12,5 +12,6 @@ Gem::Specification.new do |spec|
   spec.files         = Dir["lib/**/*.rb"]
   spec.add_runtime_dependency 'core'
   spec.add_runtime_dependency 'datacache'
+  spec.add_runtime_dependency 'duration'
   spec.add_runtime_dependency 'http'
 end
