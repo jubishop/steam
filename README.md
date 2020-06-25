@@ -1,6 +1,6 @@
-# Calculated
+# Steam
 
-A Ruby library for calculated.gg's undocumented API
+A Ruby library for Steam's API
 
 ## Installation
 
@@ -9,10 +9,11 @@ Add these lines to your application's Gemfile:
 ```ruby
 gem 'http'
 
+gem 'core', github: 'jubishop/core'
 gem 'datacache', github: 'jubishop/datacache'
-gem 'rlranks', github: 'jubishop/rlranks'
+gem 'duration', github: 'jubishop/duration'
 
-gem 'calculated', github: 'jubishop/calculated'
+gem 'steam', github: 'jubishop/steam'
 ```
 
 And then execute:
