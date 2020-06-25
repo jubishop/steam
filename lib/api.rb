@@ -16,10 +16,11 @@ module Steam
     @@player_summary_cache = DataCache.new(1.hour)
     def player_summary(id)
       return @@player_summary_cache.fetch(id) {
-        request('ISteamUser/GetPlayerSummaries/v0002', {
+        data = request('ISteamUser/GetPlayerSummaries/v0002', {
           key: @token,
           steamids: id
         })
+        return data[:response][:players].first
       }
     end
 
