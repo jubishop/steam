@@ -2,7 +2,7 @@ ruby '>= 3'
 
 source 'https://rubygems.org'
 
-gem 'json'
+gem 'http'
 gem 'rake'
 gem 'rbs'
 gem 'rest-client'

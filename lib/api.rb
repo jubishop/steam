@@ -1,8 +1,7 @@
-require 'http'
-
 require 'core'
 require 'datacache'
 require 'duration'
+require 'http'
 
 require_relative 'exceptions'
 
