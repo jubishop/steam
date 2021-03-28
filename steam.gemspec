@@ -1,7 +1,7 @@
 Gem::Specification.new do |spec|
   spec.name          = 'steam'
   spec.version       = '1.0'
-  spec.summary       = %q(A Ruby library for Steam's API)
+  spec.summary       = %q(A Ruby library for Steam's API.)
   spec.authors       = ['Justin Bishop']
   spec.email         = ['jubishop@gmail.com']
   spec.homepage      = 'https://github.com/jubishop/steam'

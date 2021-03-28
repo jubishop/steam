@@ -2,7 +2,7 @@
 
 [![Rubocop Status](https://github.com/jubishop/steam/workflows/Rubocop/badge.svg)](https://github.com/jubishop/steam/actions)
 
-A Ruby library for Steam's API
+A Ruby library for Steam's API.
 
 ## Installation
 
