@@ -1,6 +1,6 @@
 # Steam
 
-[![Rubocop Status](https://github.com/jubishop/steam/workflows/Rubocop/badge.svg)](https://github.com/jubishop/steam/actions)
+[![Rubocop Status](https://github.com/jubishop/steam/workflows/Rubocop/badge.svg)](https://github.com/jubishop/steam/actions/workflows/rubocop.yml)
 
 A Ruby library for Steam's API.
 
