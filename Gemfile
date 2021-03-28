@@ -3,6 +3,8 @@ ruby '>= 3'
 source 'https://rubygems.org'
 
 gem 'http'
+
+# defaults
 gem 'rake'
 gem 'rbs'
 gem 'rspec'
@@ -16,6 +18,8 @@ source 'https://www.jubigems.org' do
   gem 'core'
   gem 'datacache'
   gem 'duration'
+
+  # defaults
   gem 'rakegem'
 end
 
