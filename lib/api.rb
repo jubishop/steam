@@ -34,7 +34,7 @@ module Steam
         response = HTTP.get(uri)
         raise Steam::Error, uri unless response.status.success?
 
-        data = response.parse
+        data = response.parse(:json)
       rescue HTTP::Error
         raise Steam::Error, uri
       end
