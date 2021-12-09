@@ -22,6 +22,16 @@ module Steam
       }
     end
 
+    def resolve_vanity_url(vanity_name)
+      return Private.vanity_url_cache.fetch(vanity_name) {
+        data = request('ISteamUser/ResolveVanityURL/v0001', {
+          key: @token,
+          vanityurl: vanity_name
+        })
+        return data[:response][:steamid]
+      }
+    end
+
     private
 
     def request(path, query)
@@ -45,8 +55,10 @@ module Steam
 
   module Private
     @player_summary_cache = DataCache.new(1.hour)
+    @vanity_url_cache = DataCache.new(1.hour)
     class << self
       attr_reader :player_summary_cache
+      attr_reader :vanity_url_cache
     end
   end
 end
