@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'steam'
-  spec.version       = '1.3'
+  spec.version       = '1.4'
   spec.summary       = %q(A Ruby library for Steam's API.)
   spec.authors       = ['Justin Bishop']
   spec.email         = ['jubishop@gmail.com']
@@ -12,7 +12,8 @@ Gem::Specification.new do |spec|
   spec.executables   = []
   spec.metadata      = {
     'source_code_uri' => 'https://github.com/jubishop/steam',
-    'steep_types' => 'sig'
+    'steep_types' => 'sig',
+    'rubygems_mfa_required' => 'true'
   }
   spec.required_ruby_version = Gem::Requirement.new('>= 3.0')
   spec.add_runtime_dependency('core')

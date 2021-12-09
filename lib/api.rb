@@ -57,8 +57,7 @@ module Steam
     @player_summary_cache = DataCache.new(1.hour)
     @vanity_url_cache = DataCache.new(1.hour)
     class << self
-      attr_reader :player_summary_cache
-      attr_reader :vanity_url_cache
+      attr_reader :player_summary_cache, :vanity_url_cache
     end
   end
 end
